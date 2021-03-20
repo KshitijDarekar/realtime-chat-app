@@ -2,7 +2,6 @@ const express= require("express");
 const app= express();
 const server = require('http').Server(app)
 const io = require('socket.io')(server) ;
-
 const router = require('./router');
 app.use(router);
 
@@ -10,10 +9,17 @@ io.on("connection", socket => {
     
     console.log('new Connection');
     
+    socket.on("new-user",({name,room}) =>{
+        console.log(name,room);
+        
+      })
+    
     socket.on('disconnect',()=>{
 
         console.log("User disconnected");
       })
+
+      
 });
 
 const port = process.env.PORT || 4000;
