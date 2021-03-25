@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import  {Link} from 'react-router-dom'
 
-//  this is the main Parent component of the Application Tab 
  function Join(){
     const [name, setName]=useState('');
     const [room, setRoom]=useState(''); 
