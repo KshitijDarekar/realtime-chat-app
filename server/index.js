@@ -11,9 +11,6 @@ app.use(cors());
 
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
 
-
-const rooms = { name:{} };
-
 io.on("connection", (socket) => {
    
 
