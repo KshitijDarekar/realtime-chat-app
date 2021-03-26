@@ -1,5 +1,6 @@
 import React from 'react';
 import Message from './Message.js';
+import './messages.css'
 
 const Messages = ({ messages, name }) => (
   <div className="messages">

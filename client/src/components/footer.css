@@ -1,0 +1,26 @@
+.footerContainer {
+    background-color: #333333;
+    color: #fff;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    z-index: 999;
+    border-color: aliceblue;
+  }
+  
+  .footerInside {
+    text-align: center;
+    padding:15px;
+  }
+  
+  .footerText {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: center;
+    flex-basis: 100%;
+    padding: 0 8.33333%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }

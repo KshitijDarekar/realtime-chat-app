@@ -6,6 +6,8 @@ import Messages from './Messages.js';
 import InfoBar from './Infobar.js';
 import Input from './Input.js';
 
+import './chat.css';
+
 let socket; 
 const connectionOptions =  {
     "force new connection" : true,
